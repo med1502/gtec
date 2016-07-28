@@ -10,11 +10,25 @@
   display: none !important;
 }
 
-</style>
-</head>
-<body ng-cloak> 
+body{
+    margin-top:50px !important;
+}
 
-    <div ng-controller="gCtrl as vm1"  >
+</style>
+<link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css"
+</head>
+
+<body ng-cloak> 
+    
+
+   <div ng-include="'app/nav/nav.html'"></div>
+
+   <div class="container" ng-view></div>
+   
+
+    
+
+   <!-- <div ng-controller="gCtrl as vm1"  >
         <h2>{{vm1.name}}</h2><br>
         <h2> ${{vm1.price}}<h2>
         <input ng-model="vm1.name"><br>
@@ -24,7 +38,13 @@
                 <li ng-repeat="l in vm1.list | orderBy:'name' | filter:vm1.name">
                  {{l.name}}
                 </li>
-            </ul>
+            </ul>  
+
+            <div ng-show="5===6">
+
+             <h1>App</h1>
+
+            </div>
      
 
     <div ng-controller="g1Ctrl as vm2">  
@@ -35,9 +55,14 @@
 
     <input ng-model="name">
 
-    </div> 
+    </div> -->
 
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+ <script src="bower_components/angular/angular.js"></script>
+ <script src="bower_components/angular-route/angular-route.js"></script>
+ 
  <script src="app/app.js"></script>
+ <script src="app/app.config.js"></script>
+ <script src="app/home/home.controller.js"></script>
+ <script src="app/about/about.controller.js"></script>
 </body>
 </html>

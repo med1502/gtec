@@ -1,0 +1,22 @@
+{
+  "name": "gtec",
+  "homepage": "https://github.com/med1502/gtec",
+  "authors": [
+    "mohamed <med1502@hotmail.fr>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
